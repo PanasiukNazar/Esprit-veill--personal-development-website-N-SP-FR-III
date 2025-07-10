@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Esprit Éveillé</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="développement personnel, croissance personnelle, bien-être mental, motivation, gestion du stress, pleine conscience, éducation émotionnelle, équilibre intérieur, autonomie personnelle, objectifs de vie"
+            name="keywords"
+        />
+        <meta
+            content="Découvrez des ressources éducatives uniques pour améliorer votre développement personnel, renforcer votre bien-être mental et atteindre vos objectifs de vie avec clarté et confiance."
+            name="description"
+        />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <div
+            class="container-fluid px-0 wow fadeIn"
+            data-wow-delay="0.1s"
+            style="background: #001d23"
+        >
+            <nav
+                class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn"
+                data-wow-delay="0.1s"
+            >
+                <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                    <h1 class="fw-bold text-primary m-0">
+                        Esprit<span class="text-white">Éveillé</span>
+                    </h1>
+                </a>
+                <button
+                    type="button"
+                    class="navbar-toggler me-4"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto p-4 p-lg-0">
+                        <a href="index.html" class="nav-item nav-link active"
+                            >Accueil</a
+                        >
+                        <a href="#about" class="nav-item nav-link">À Propos</a>
+                        <a href="#service" class="nav-item nav-link"
+                            >Activités</a
+                        >
+                        <a href="#team" class="nav-item nav-link">Équipe</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-lg-flex ms-2">
+                        <a
+                            class="btn btn-outline-primary py-2 px-3"
+                            href="#contact"
+                        >
+                            Contactez-nous
+                            <div
+                                class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
+                            >
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div
+                id="header-carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            class="w-100"
+                            src="img/carousel-1.jpg"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 pt-5">
+                                        <h1
+                                            class="display-4 text-white mb-3 animated slideInDown"
+                                        >
+                                            Développement Personnel Épanouissant
+                                        </h1>
+                                        <p
+                                            class="fs-5 text-white-50 mb-5 animated slideInDown"
+                                        >
+                                            Explorez des méthodes concrètes pour
+                                            améliorer votre confiance, votre
+                                            clarté mentale et votre bien-être
+                                            quotidien. Nos ressources vous
+                                            accompagnent dans
+                                            l’approfondissement de votre
+                                            potentiel personnel.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100"
+                            src="img/carousel-2.jpg"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 pt-5">
+                                        <h1
+                                            class="display-4 text-white mb-3 animated slideInDown"
+                                        >
+                                            Méthodes de Croissance Intérieure
+                                        </h1>
+                                        <p
+                                            class="fs-5 text-white-50 mb-5 animated slideInDown"
+                                        >
+                                            Approfondissez votre compréhension
+                                            de soi grâce à une approche
+                                            structurée du développement
+                                            personnel. Découvrez des outils pour
+                                            clarifier vos objectifs de vie,
+                                            renforcer votre discipline et
+                                            cultiver l’épanouissement intérieur.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div id="about" class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div
+                            class="position-relative overflow-hidden h-100"
+                            style="min-height: 400px"
+                        >
+                            <img
+                                class="position-absolute w-100 h-100 pt-5 pe-5"
+                                src="img/about-1.jpg"
+                                alt=""
+                                style="object-fit: cover"
+                            />
+                            <img
+                                class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
+                                src="img/about-2.jpg"
+                                alt=""
+                                style="width: 200px; height: 200px"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="h-100">
+                            <div
+                                class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+                            >
+                                À Propos
+                            </div>
+                            <h1 class="display-6 mb-5">
+                                Accompagner Votre Chemin Vers la Conscience de
+                                Soi et la Clarté Intérieure
+                            </h1>
+                            <div
+                                class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4"
+                            >
+                                <p class="text-dark mb-2">
+                                    Nous vous aidons à explorer les différentes
+                                    dimensions du développement personnel :
+                                    confiance, gestion des émotions,
+                                    organisation mentale et équilibre de vie.
+                                    Nos parcours sont guidés par des
+                                    spécialistes comme Claire Dubois et Mathieu
+                                    Fournier, passionnés par la transformation
+                                    intérieure durable et sincère.
+                                </p>
+                            </div>
+                            <p class="mb-5">
+                                Grâce à une approche structurée et
+                                bienveillante, vous pouvez progressivement
+                                améliorer votre quotidien. Ensemble, nous
+                                cultivons des habitudes positives, renforçons
+                                votre estime de soi, et construisons les bases
+                                d'une vie personnelle plus sereine et alignée à
+                                vos valeurs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Causes Start -->
+        <div class="container-xxl bg-light my-5 py-5">
+            <div class="container py-5">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 500px"
+                >
+                    <div
+                        class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+                    >
+                        Nos Atouts
+                    </div>
+                    <h1 class="display-6">
+                        Parcours Personnalisés pour l’Épanouissement Personnel
+                    </h1>
+                    <p class="mb-5">
+                        Nous proposons des approches éducatives et pratiques
+                        visant à renforcer la connaissance de soi, la gestion
+                        des émotions et le développement des compétences
+                        personnelles. Grâce à des outils structurés, vous
+                        pourrez explorer votre potentiel, développer votre
+                        équilibre intérieur et progresser dans une dynamique de
+                        croissance personnelle.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4 pt-0">
+                                <h5 class="mb-3 mt-3">
+                                    Cadre Structuré de Développement Personnel
+                                </h5>
+                                <p>
+                                    Nos méthodes sont adaptées à vos besoins
+                                    individuels et vous aident à structurer
+                                    votre cheminement intérieur. Grâce à des
+                                    pratiques conscientes, vous apprendrez à
+                                    mieux gérer votre énergie mentale et vos
+                                    ressources émotionnelles.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/courses-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4 pt-0">
+                                <h5 class="mb-3 mt-3">
+                                    Analyse de Potentiel et de Motivation
+                                </h5>
+                                <p>
+                                    Nous vous aidons à identifier vos leviers
+                                    personnels de progression. En comprenant vos
+                                    forces profondes et vos aspirations, vous
+                                    serez en mesure d’orienter vos décisions de
+                                    manière plus éclairée.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/courses-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4 pt-0">
+                                <h5 class="mb-3 mt-3">
+                                    Stratégies de Croissance Intérieure
+                                </h5>
+                                <p>
+                                    Nous vous accompagnons dans la mise en place
+                                    de stratégies personnelles qui favorisent la
+                                    concentration, la sérénité et l’autonomie.
+                                    Chaque parcours est pensé pour soutenir
+                                    votre équilibre durable et renforcer votre
+                                    confiance.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/courses-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Causes End -->
+
+        <!-- Service Start -->
+        <div id="service" class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 500px"
+                >
+                    <div
+                        class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+                    >
+                        Nos Activités
+                    </div>
+                    <h1 class="display-6">
+                        Programmes et Ressources pour l’Évolution Personnelle
+                    </h1>
+                    <p class="mb-5">
+                        Nous proposons des contenus éducatifs pour favoriser la
+                        progression personnelle, l’organisation intérieure et le
+                        développement de nouvelles habitudes. Nos ressources
+                        sont conçues pour encourager une exploration active de
+                        soi et une progression guidée par des principes
+                        pédagogiques et pratiques.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="service-item bg-white text-center h-100 p-4 p-xl-5"
+                        >
+                            <img
+                                class="img-fluid mb-4"
+                                src="img/icon-1.png"
+                                alt=""
+                            />
+                            <h4 class="mb-3">Gestion des Émotions</h4>
+                            <p class="mb-4">
+                                Apprenez à identifier, accueillir et transformer
+                                vos émotions au quotidien. Nos outils permettent
+                                une meilleure régulation émotionnelle pour
+                                renforcer votre équilibre personnel.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="service-item bg-white text-center h-100 p-4 p-xl-5"
+                        >
+                            <img
+                                class="img-fluid mb-4"
+                                src="img/icon-2.png"
+                                alt=""
+                            />
+                            <h4 class="mb-3">Clarté Mentale et Objectifs</h4>
+                            <p class="mb-4">
+                                Découvrez des techniques pour organiser vos
+                                pensées, clarifier vos intentions et maintenir
+                                le cap vers ce qui compte vraiment pour vous.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="service-item bg-white text-center h-100 p-4 p-xl-5"
+                        >
+                            <img
+                                class="img-fluid mb-4"
+                                src="img/icon-3.png"
+                                alt=""
+                            />
+                            <h4 class="mb-3">Pratique Quotidienne de Soi</h4>
+                            <p class="mb-4">
+                                Développez des routines simples et efficaces
+                                pour entretenir votre bien-être personnel au
+                                jour le jour. Respiration, écriture,
+                                observation... chaque pratique est un pas vers
+                                vous-même.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Donate Start -->
+        <div class="container-fluid donate my-5 py-5" data-parallax="scroll">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div
+                            class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+                        >
+                            Notre Approche
+                        </div>
+                        <h1 class="display-6 text-white mb-5">
+                            Une Démarche Structurée pour la Connaissance de Soi
+                        </h1>
+                        <p class="text-white-50 mb-0">
+                            Nous croyons que chaque personne porte en elle les
+                            ressources nécessaires à son épanouissement. À
+                            travers une méthodologie structurée, nous vous
+                            accompagnons pour explorer vos aspirations,
+                            comprendre vos schémas intérieurs et intégrer des
+                            outils concrets dans votre quotidien. Grâce à
+                            l’écoute, la réflexion guidée et la mise en
+                            pratique, vous progressez à votre rythme vers plus
+                            de clarté, de stabilité intérieure et de liberté
+                            personnelle.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img
+                            class="donate-image"
+                            src="img/carousel-3.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Donate End -->
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5" id="team">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 500px"
+                >
+                    <div
+                        class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+                    >
+                        Équipe pédagogique
+                    </div>
+                    <h1 class="display-6">
+                        Spécialistes du Développement Personnel et de
+                        l’Accompagnement Intérieur
+                    </h1>
+                    <p class="mb-5">
+                        Notre équipe est composée de formateurs passionnés, tous
+                        unis par un engagement profond pour l’éveil de soi et
+                        l’évolution personnelle. Chaque membre apporte son
+                        expertise unique en psychologie positive, en gestion
+                        émotionnelle et en pratiques réflexives. Ensemble, nous
+                        vous guidons vers une meilleure connaissance de
+                        vous-même à travers des outils adaptés à votre parcours
+                        personnel.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Claire Moreau</h5>
+                                <p class="text-primary">
+                                    Coach en développement personnel
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Julien Lefèvre</h5>
+                                <p class="text-primary">
+                                    Formateur en intelligence émotionnelle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Élodie Martin</h5>
+                                <p class="text-primary">
+                                    Praticienne en pleine conscience
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-4.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Antoine Dubois</h5>
+                                <p class="text-primary">
+                                    Conseiller en équilibre de vie
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 500px"
+                >
+                    <div
+                        class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+                    >
+                        Témoignages
+                    </div>
+                    <h1 class="display-6">
+                        Ce que disent nos participants à propos de leur
+                        cheminement personnel
+                    </h1>
+                    <p class="mb-5">
+                        Nous sommes honorés d'accompagner tant de personnes sur
+                        leur chemin de transformation intérieure. Voici quelques
+                        retours authentiques de participants ayant expérimenté
+                        nos approches de développement personnel :
+                    </p>
+                </div>
+                <div
+                    class="owl-carousel testimonial-carousel wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <div class="testimonial-item text-center">
+                        <img
+                            class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                            src="img/testimonial-1.jpg"
+                            style="width: 100px; height: 100px"
+                        />
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>
+                                "Grâce à l’écoute bienveillante et aux outils
+                                concrets, j’ai retrouvé une meilleure clarté
+                                intérieure. J’ai appris à reconnaître mes
+                                besoins profonds et à poser des actions plus
+                                alignées avec mes valeurs."
+                            </p>
+                            <h5 class="mb-1">Sophie Bernard</h5>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img
+                            class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                            src="img/testimonial-2.jpg"
+                            style="width: 100px; height: 100px"
+                        />
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>
+                                "J’ai pu mettre en place une routine de
+                                réflexion et de recentrage qui me permet de
+                                mieux vivre mes émotions au quotidien. Une
+                                approche simple, humaine et efficace."
+                            </p>
+                            <h5 class="mb-1">Marc Delaunay</h5>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img
+                            class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                            src="img/testimonial-3.jpg"
+                            style="width: 100px; height: 100px"
+                        />
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>
+                                "Un véritable tournant pour moi. J’ai pris
+                                conscience de mes fonctionnements limitants et
+                                j’ai commencé à construire un chemin de
+                                développement plus aligné. Merci pour cette
+                                belle guidance."
+                            </p>
+                            <h5 class="mb-1">Claire Fontaine</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                        <div
+                            class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+                        >
+                            Contactez-nous
+                        </div>
+                        <h1 class="display-6 mb-5">
+                            Commencez votre chemin vers l’épanouissement
+                            personnel et la pleine conscience
+                        </h1>
+                        <p class="mb-4">
+                            Nous sommes ici pour vous accompagner dans votre
+                            développement personnel. Que vous soyez à la
+                            recherche de clarté intérieure, de gestion
+                            émotionnelle ou d’outils de réflexion, notre équipe
+                            est à votre écoute. N’hésitez pas à nous écrire afin
+                            que nous puissions vous guider vers des ressources
+                            adaptées à votre parcours. Ensemble, nous
+                            construirons un chemin vers plus de sérénité et
+                            d’alignement intérieur.
+                        </p>
+                        <form action="thanks.html" method="get">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="name"
+                                            placeholder="Votre nom"
+                                            required
+                                        />
+                                        <label for="name">Votre nom</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            placeholder="Votre email"
+                                            required
+                                        />
+                                        <label for="email">Votre email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="subject"
+                                            placeholder="Sujet"
+                                            required
+                                        />
+                                        <label for="subject">Sujet</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea
+                                            class="form-control"
+                                            placeholder="Laissez votre message ici"
+                                            id="message"
+                                            style="height: 100px"
+                                            required
+                                        ></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button
+                                        class="btn btn-primary py-2 px-3 me-3"
+                                        id="submit"
+                                    >
+                                        Envoyer le message
+                                        <div
+                                            class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
+                                        >
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h1 class="fw-bold text-primary m-0">
+                            Fin<span class="text-white">Advice Source</span>
+                        </h1>
+                        <p>
+                            Merci pour votre visite. Nous sommes engagés à
+                            favoriser l’éveil intérieur à travers des contenus
+                            éducatifs axés sur le développement personnel, la
+                            gestion de soi et l’équilibre de vie. Nos ressources
+                            vous accompagnent sur un chemin structuré
+                            d’évolution personnelle, dans une approche humaine,
+                            bienveillante et sans jugement.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Liens utiles</h5>
+                        <a class="btn btn-link" href="#about">À propos</a>
+                        <a class="btn btn-link" href="#contact">Contact</a>
+                        <a class="btn btn-link" href="#services"
+                            >Nos ressources</a
+                        >
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Conditions d'utilisation</a
+                        >
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Politique de confidentialité</a
+                        >
+                        <a class="btn btn-link" href="cookie-policy.html"
+                            >Politique des cookies</a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Adresse</h5>
+                        <p>
+                            <i class="fa fa-envelope me-3"></i
+                            >esprit_eveillé@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Consentement aux cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Ce site utilise des cookies pour vous offrir une expérience
+                    de navigation optimisée et pertinente.
+                    <a href="cookie-policy.html">En savoir plus...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Accepter</button>
+                <button class="cookie-button" id="declineBtn">Refuser</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
